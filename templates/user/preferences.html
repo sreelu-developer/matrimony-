@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Preferences</title>
+    <style>
+        h1
+        {
+            text-align: center;
+        }
+        body
+        {
+            display: flex;
+              align-items: center;
+              justify-content: center;
+              margin: 0 auto;
+              height: 100vh;
+            background-image: url("/static/login/images/matrimony.jpg");
+            background-color: crimson;
+        }
+        .main{
+            background-color:#ad0000;
+            width: auto;
+            height: auto;
+
+            padding: 20px;
+            border-radius: 5%;
+            box-shadow: 2px 2px 20px 15px cornsilk;
+
+
+        }
+
+       table {
+    width: 100%;
+    margin: 0 auto;
+           font-size:20px ;
+  }
+  .bttn
+  {
+      background-color: #ece0c6;
+      color: black;
+      border: none;
+      height: 40px;
+      width: 80px;
+
+  }
+    </style>
+</head>
+<body>
+<div class="main">
+    <h1>PREFERENCES</h1>
+<form action="" method="post" enctype="multipart/form-data">
+
+<table width="200"  cellspacing="10" cellpadding="10" class="">
+<tr>
+    <th scope="row">Age limit</th>
+    <td><label for="textfield19"></label>
+    <input type="number" name="textfield19" id="textfield19"  required placeholder="Minimum age"/>
+    <input type="number" name="textfield20" required placeholder="Maximum Age"/></td>
+  </tr>
+    <tr>
+    <th scope="row">Education Level</th>
+    <td><label for="textfield21"></label>
+        <select name="textfield21" required>
+            <option value="">select</option>
+            <option value="SSLC">SSLC</option>
+            <option value="Higher secondary">Higher Secondary/Poly</option>
+            <option value="graduation">Graduation</option>
+            <option value="post graduation">Post Graduation</option>
+        </select>
+    </td>
+  </tr>
+    <tr>
+    <th scope="row">Family status</th>
+    <td><label for="textfield22"></label>
+    <select name="textfield22" required>
+            <option value="">select</option>
+            <option value="below average">Below Average</option>
+            <option value="average">Average</option>
+            <option value="above Average ">Above average</option>
+            <option value="high">High</option>
+    </select></td>
+  </tr>
+     <tr>
+    <th colspan="2" scope="row"><label for="fileField"></label>
+    <input type="submit" name="button" class="bttn" id="button" value="Register" /></th>
+  </tr>
+</table>
+</form>
+</div>
+</body>
+</html>

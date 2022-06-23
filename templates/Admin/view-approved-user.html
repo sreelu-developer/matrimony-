@@ -1,0 +1,53 @@
+{% extends 'Admin/home.html' %}
+{% block body %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Approved users</title>
+</head>
+
+<body>
+<form action="" method="get"><table width="200" class="table table-hover" cellspacing="10" cellpadding="10">
+  <tr>
+    <th scope="row">#</th>
+    <td>Name</td>
+    <td>Email</td>
+    <td>Phone Number</td>
+    <td>Age</td>
+    <td>Occupation</td>
+    <td>Qualification</td>
+    <td>Place</td>
+    <td>Post</td>
+    <td>Pin</td>
+    <td>Religion</td>
+    <td>Caste</td>
+    <td>Gender</td>
+    <td>level of education</td>
+    <td>Photo</td>
+    </tr>
+  {% for i in data %}
+  <tr>
+    <th scope="row">{{ loop.index }}&nbsp;</th>
+    <td>{{ i['uname'] }}&nbsp;</td>
+    <td>{{ i['email'] }}&nbsp;</td>
+    <td>{{ i['phone_no'] }}&nbsp;</td>
+    <td>{{ i['age'] }}&nbsp;</td>
+    <td>&nbsp;{{ i['occupation'] }}</td>
+    <td>{{ i['qualification'] }}&nbsp;</td>
+    <td>&nbsp;{{ i['place'] }}&nbsp;</td>
+    <td>{{ i['post'] }}&nbsp;</td>
+    <td>&nbsp;{{ i['pin'] }}&nbsp;</td>
+    <td>{{ i['religion'] }}&nbsp;</td>
+    <td>{{ i['caste'] }}&nbsp;</td>
+    <td>{{ i['gender'] }}&nbsp;</td>
+    <td>{{ i['edu_level'] }}&nbsp;</td>
+    <td><img src="{{ i['photo'] }}" height="100" width="100"> &nbsp;</td>
+
+  </tr>
+    {% endfor %}
+</table>
+</form>
+</body>
+</html>
+{% endblock %}

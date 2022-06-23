@@ -1,0 +1,576 @@
+{% extends 'user/template.html' %}
+{% block body %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Personality Test</title>
+</head>
+
+<body>
+<form action="" method="post">
+<table width="200"  cellspacing="10" cellpadding="10" class="table table-hover">
+  <tr>
+    <th colspan="5" scope="row">1.I am the life of the party.</th>
+    </tr>
+  <tr>
+    <td scope="row"><p>
+      <label>
+        <input type="radio" name="RadioGroup1" value="1" id="RadioGroup1_0" />
+        Disagree
+      </label>
+      <br />
+    </p></td>
+    <td><label>
+      <input type="radio" name="RadioGroup1" value="2" id="RadioGroup1_1" />
+      Slightly disagree
+    </label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup1" value="3" id="RadioGroup1_2" />
+      Neutral</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup1" value="4" id="RadioGroup1_3" />
+      Slightly agree
+    </label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup1" value="5" id="RadioGroup1_4" />
+      Agree</label></td>
+  </tr>
+  <tr>
+    <th colspan="5" scope="row">2.I don't talk a lot.</th>
+    </tr>
+  <tr>
+    <td scope="row"><p>
+      <label>
+        <input type="radio" name="RadioGroup2" value="5" id="RadioGroup2_0" /></label>
+      Disagree<br />
+    </p></td>
+    <td><label>
+      <input type="radio" name="RadioGroup2" value="4" id="RadioGroup2_1" />
+      Slightly disagree </label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup2" value="3" id="RadioGroup2_2" />
+      Neutral</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup2" value="2" id="RadioGroup2_3" />
+      Slightly agree</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup2" value="1" id="RadioGroup2_4" />
+      Agree</label></td>
+  </tr>
+  <tr>
+    <th colspan="5" scope="row"> 3.I feel comfortable around people.</th>
+    </tr>
+  <tr>
+    <td scope="row"><p>
+      <label>
+        <input type="radio" name="RadioGroup3" value="1" id="RadioGroup3_0" /></label>
+      Disagree<br />
+    </p></td>
+    <td><label>
+      <input type="radio" name="RadioGroup3" value="2" id="RadioGroup3_1" />
+      Slightly disagree </label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup3" value="3" id="RadioGroup3_2" />
+      Neutral</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup3" value="4" id="RadioGroup3_3" />
+      Slightly agree</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup3" value="5" id="RadioGroup3_4" />
+      Agree</label></td>
+  </tr>
+  <tr>
+    <th colspan="5" scope="row">4.I keep in the background.</th>
+    </tr>
+  <tr>
+    <td scope="row"><p>
+      <label>
+        <input type="radio" name="RadioGroup4" value="5" id="RadioGroup4_0" /></label>
+      Disagree<br />
+    </p></td>
+    <td><label>
+      <input type="radio" name="RadioGroup4" value="4" id="RadioGroup4_1" />
+      Slightly disagree </label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup4" value="3" id="RadioGroup4_2" />
+      Neutral</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup4" value="2" id="RadioGroup4_3" />
+      Slightly agree</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup4" value="1" id="RadioGroup4_4" />
+      Agree</label></td>
+  </tr>
+{#  <tr>#}
+{#    <th colspan="5" scope="row">5.I  start conversations.</th>#}
+{#    </tr>#}
+{#  <tr>#}
+{#    <td scope="row"><p>#}
+{#      <label>#}
+{#        <input type="radio" name="RadioGroup5" value="1" id="RadioGroup5_0" /></label>#}
+{#      Disagree<br />#}
+{#    </p></td>#}
+{#    <td><label>#}
+{#      <input type="radio" name="RadioGroup5" value="2" id="RadioGroup5_1" />#}
+{#      Slightly disagree </label></td>#}
+{#    <td><label>#}
+{#      <input type="radio" name="RadioGroup5" value="3" id="RadioGroup5_2" />#}
+{#      Neutral</label></td>#}
+{#    <td><label>#}
+{#      <input type="radio" name="RadioGroup5" value="4" id="RadioGroup5_3" />#}
+{#      Slightly agree</label></td>#}
+{#    <td><label>#}
+{#      <input type="radio" name="RadioGroup5" value="5" id="RadioGroup5_4" />#}
+{#      Agree</label></td>#}
+{#  </tr>#}
+  <tr>
+    <th colspan="5" scope="row">5.I feel little concern for others.</th>
+    </tr>
+  <tr>
+    <td scope="row"><p>
+      <label>
+        <input type="radio" name="RadioGroup6" value="5" id="RadioGroup6_0" /></label>
+      Disagree<br />
+    </p></td>
+    <td><label>
+      <input type="radio" name="RadioGroup6" value="4" id="RadioGroup6_1" />
+      Slightly disagree </label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup6" value="3" id="RadioGroup6_2" />
+      Neutral</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup6" value="2" id="RadioGroup6_3" />
+      Slightly agree</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup6" value="1" id="RadioGroup6_4" />
+      Agree</label></td>
+  </tr>
+  <tr>
+    <th colspan="5" scope="row">6.I  make people feel at ease.</th>
+    </tr>
+  <tr>
+    <td scope="row"><p>
+      <label>
+        <input type="radio" name="RadioGroup7" value="1" id="RadioGroup7_0" /></label>
+      Disagree<br />
+    </p></td>
+    <td><label>
+      <input type="radio" name="RadioGroup7" value="2" id="RadioGroup7_1" />
+      Slightly disagree </label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup7" value="3" id="RadioGroup7_2" />
+      Neutral</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup7" value="4" id="RadioGroup7_3" />
+      Slightly agree</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup7" value="5" id="RadioGroup7_4" />
+      Agree</label></td>
+  </tr>
+  <tr>
+    <th colspan="5" scope="row">7.I am not really interested in others.</th>
+    </tr>
+  <tr>
+    <td scope="row"><p>
+      <label>
+        <input type="radio" name="RadioGroup8" value="5" id="RadioGroup8_0" /></label>
+      Disagree<br />
+    </p></td>
+    <td><label>
+      <input type="radio" name="RadioGroup8" value="4" id="RadioGroup8_1" />
+      Slightly disagree </label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup8" value="3" id="RadioGroup8_2" />
+      Neutral</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup8" value="2" id="RadioGroup8_3" />
+      Slightly agree</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup8" value="1" id="RadioGroup8_4" />
+      Agree</label></td>
+  </tr>
+  <tr>
+    <th colspan="5" scope="row">8.I sympathize with others' feelings.</th>
+    </tr>
+  <tr>
+    <td scope="row"><p>
+      <label>
+        <input type="radio" name="RadioGroup9" value="1" id="RadioGroup9_0" /></label>
+      Disagree<br />
+    </p></td>
+    <td><label>
+      <input type="radio" name="RadioGroup9" value="2" id="RadioGroup9_1" />
+      Slightly disagree </label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup9" value="3" id="RadioGroup9_2" />
+      Neutral</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup9" value="4" id="RadioGroup9_3" />
+      Slightly agree</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup9" value="5" id="RadioGroup9_4" />
+      Agree</label></td>
+  </tr>
+{#  <tr>#}
+{#    <th colspan="5" scope="row">10.I  am not interested in other people's problems.</th>#}
+{#    </tr>#}
+{#  <tr>#}
+{#    <td scope="row"><p>#}
+{#      <label>#}
+{#        <input type="radio" name="RadioGroup10" value="1" id="RadioGroup10_0" /></label>#}
+{#      Disagree<br />#}
+{#    </p></td>#}
+{#    <td><label>#}
+{#      <input type="radio" name="RadioGroup10" value="2" id="RadioGroup10_1" />#}
+{#      Slightly disagree </label></td>#}
+{#    <td><label>#}
+{#      <input type="radio" name="RadioGroup10" value="3" id="RadioGroup10_2" />#}
+{#      Neutral</label></td>#}
+{#    <td><br />#}
+{#      <label>#}
+{#        <input type="radio" name="RadioGroup10" value="4" id="RadioGroup10_3" />#}
+{#        Slightly agree</label></td>#}
+{#    <td><label>#}
+{#      <input type="radio" name="RadioGroup10" value="5" id="RadioGroup10_4" />#}
+{#      Agree</label></td>#}
+{#  </tr>#}
+  <tr>
+    <th colspan="5" scope="row">9.I  am always prepared.</th>
+    </tr>
+  <tr>
+    <td scope="row"><input type="radio" name="RadioGroup11" value="1" id="RadioGroup11_0" />  Disagree<br />    </td>
+    <td><label>
+      <input type="radio" name="RadioGroup11" value="2" id="RadioGroup11_1" />
+      Slightly disagree </label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup11" value="3" id="RadioGroup11_2" />
+      Neutral</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup11" value="4" id="RadioGroup11_3" />
+      Slightly agree</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup11" value="5" id="RadioGroup11_4" />
+      Agree</label></td>
+  </tr>
+  <tr>
+    <th colspan="5" scope="row">10.I leave my belongings around.</th>
+    </tr>
+  <tr>
+    <td scope="row"><p>
+      <label>
+        <input type="radio" name="RadioGroup12" value="5" id="RadioGroup12_0" /></label>
+      Disagree<br />
+    </p></td>
+    <td><label>
+      <input type="radio" name="RadioGroup12" value="4" id="RadioGroup12_1" />
+      Slightly disagree
+</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup12" value="3" id="RadioGroup12_2" />
+      Neutral</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup12" value="2" id="RadioGroup12_3" />
+      Slightly agree</label></td>
+    <td><br />
+      <label>
+        <input type="radio" name="RadioGroup12" value="1" id="RadioGroup12_4" />
+      Agree</label></td>
+  </tr>
+  <tr>
+    <th colspan="5" scope="row">11.I pay attention to details.</th>
+    </tr>
+  <tr>
+    <td scope="row"><p>
+      <label>
+        <input type="radio" name="RadioGroup13" value="1" id="RadioGroup13_0" /></label>
+      Disagree<br />
+    </p></td>
+    <td><label>
+      <input type="radio" name="RadioGroup13" value="2" id="RadioGroup13_1" />
+      Slightly disagree </label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup13" value="3" id="RadioGroup13_2" />
+      Neutral</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup13" value="4" id="RadioGroup13_3" />
+      Slightly agree</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup13" value="5" id="RadioGroup13_4" />
+      Agree</label></td>
+  </tr>
+  <tr>
+    <th colspan="5" scope="row">12.I  make a mess of things.</th>
+    </tr>
+  <tr>
+    <td scope="row"><p>
+      <label>
+        <input type="radio" name="RadioGroup14" value="5" id="RadioGroup14_0" /></label>
+      Disagree<br />
+    </p></td>
+    <td><label>
+      <input type="radio" name="RadioGroup14" value="4" id="RadioGroup14_1" />
+      Slightly disagree </label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup14" value="3" id="RadioGroup14_2" />
+      Neutral</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup14" value="2" id="RadioGroup14_3" />
+      Slightly agree</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup14" value="1" id="RadioGroup14_4" />
+      Agree</label></td>
+  </tr>
+{#  <tr>#}
+{#    <th colspan="5" scope="row">15.I get chores done right away.</th>#}
+{#    </tr>#}
+{#  <tr>#}
+{#    <td scope="row"><p>#}
+{#      <label>#}
+{#        <input type="radio" name="RadioGroup15" value="1" id="RadioGroup15_0" /></label>#}
+{#      Disagree<br />#}
+{#    </p></td>#}
+{#    <td><label>#}
+{#      <input type="radio" name="RadioGroup15" value="2" id="RadioGroup15_1" />#}
+{#      Slightly disagree </label></td>#}
+{#    <td><label>#}
+{#      <input type="radio" name="RadioGroup15" value="3" id="RadioGroup15_2" />#}
+{#      Neutral</label></td>#}
+{#    <td><label>#}
+{#      <input type="radio" name="RadioGroup15" value="4" id="RadioGroup15_3" />#}
+{#      Slightly agree</label></td>#}
+{#    <td><label>#}
+{#      <input type="radio" name="RadioGroup15" value="5" id="RadioGroup15_4" />#}
+{#      Agree</label></td>#}
+{#  </tr>#}
+  <tr>
+    <th colspan="5" scope="row">13.I get stressed out easily.</th>
+    </tr>
+  <tr>
+    <td scope="row"><p>
+      <label>
+        <input type="radio" name="RadioGroup16" value="5" id="RadioGroup16_0" />
+        Disagree</label>
+      <br />
+    </p></td>
+    <td><label>
+      <input type="radio" name="RadioGroup16" value="4" id="RadioGroup16_1" />
+      Slightly disagree </label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup16" value="3" id="RadioGroup16_2" />
+      Neutral</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup16" value="2" id="RadioGroup16_3" />
+      Slightly agree</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup16" value="1" id="RadioGroup16_4" />
+      Agree</label></td>
+  </tr>
+  <tr>
+    <th colspan="5" scope="row">14.I am relaxed most of the time.</th>
+    </tr>
+  <tr>
+    <td scope="row"><p>
+      <label>
+        <input type="radio" name="RadioGroup17" value="1" id="RadioGroup17_0" /></label>
+      Disagree<br />
+    </p></td>
+    <td><label>
+      <input type="radio" name="RadioGroup17" value="2" id="RadioGroup17_1" />
+      Slightly disagree </label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup17" value="3" id="RadioGroup17_2" />
+      Neutral</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup17" value="4" id="RadioGroup17_3" />
+      Slightly agree</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup17" value="5" id="RadioGroup17_4" />
+      Agree</label></td>
+  </tr>
+  <tr>
+    <th colspan="5" scope="row">15.I worry about things.</th>
+    </tr>
+  <tr>
+    <td scope="row"><p>
+      <label>
+        <input type="radio" name="RadioGroup18" value="5" id="RadioGroup18_0" /></label>
+      Disagree<br />
+    </p></td>
+    <td><input type="radio" name="RadioGroup18" value="4" id="RadioGroup18_1" />
+      Slightly disagree </td>
+    <td><label>
+      <input type="radio" name="RadioGroup18" value="3" id="RadioGroup18_2" />
+      Neutral</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup18" value="2" id="RadioGroup18_3" />
+      Slightly agree</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup18" value="1" id="RadioGroup18_4" />
+      Agree</label></td>
+  </tr>
+  <tr>
+    <th colspan="5" scope="row">16.I seldom feel blue.</th>
+    </tr>
+  <tr>
+    <td scope="row"><p>
+      <label>
+        <input type="radio" name="RadioGroup19" value="1" id="RadioGroup19_0" /></label>
+      Disagree<br />
+    </p></td>
+    <td><label>
+      <input type="radio" name="RadioGroup19" value="2" id="RadioGroup19_1" />
+      Slightly disagree </label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup19" value="3" id="RadioGroup19_2" />
+      Neutral</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup19" value="4" id="RadioGroup19_3" />
+      Slightly agree</label></td>
+    <td><br />
+      <label>
+        <input type="radio" name="RadioGroup19" value="5" id="RadioGroup19_4" />
+      Agree</label></td>
+  </tr>
+{#  <tr>#}
+{#    <th colspan="5" scope="row">20.I  am easily disturbed.</th>#}
+{#    </tr>#}
+{#  <tr>#}
+{#    <td scope="row"><p>#}
+{#      <label>#}
+{#        <input type="radio" name="RadioGroup20" value="1" id="RadioGroup20_0" /></label>#}
+{#      Disagree<br />#}
+{#    </p></td>#}
+{#    <td><label>#}
+{#      <input type="radio" name="RadioGroup20" value="2" id="RadioGroup20_1" />#}
+{#      Slightly disagree </label></td>#}
+{#    <td><label>#}
+{#      <input type="radio" name="RadioGroup20" value="3" id="RadioGroup20_2" />#}
+{#      Neutral</label></td>#}
+{#    <td><label>#}
+{#      <input type="radio" name="RadioGroup20" value="4" id="RadioGroup20_3" />#}
+{#      Slightly agree</label></td>#}
+{#    <td><br />#}
+{#      <label>#}
+{#        <input type="radio" name="RadioGroup20" value="5" id="RadioGroup20_4" />#}
+{#      Agree</label></td>#}
+{#  </tr>#}
+  <tr>
+    <th colspan="5" scope="row">17.I  have a rich vocabulary.</th>
+    </tr>
+  <tr>
+    <td scope="row"><p>
+      <label>
+        <input type="radio" name="RadioGroup21" value="1" id="RadioGroup21_0" /></label>
+      Disagree<br />
+    </p></td>
+    <td><label>
+      <input type="radio" name="RadioGroup21" value="2" id="RadioGroup21_1" />
+      Slightly disagree </label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup21" value="3" id="RadioGroup21_2" />
+      Neutral</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup21" value="4" id="RadioGroup21_3" />
+      Slightly agree</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup21" value="5" id="RadioGroup21_4" />
+      Agree</label></td>
+  </tr>
+  <tr>
+    <th colspan="5" scope="row">18.I have difficulty understanding abstract ideas.</th>
+    </tr>
+  <tr>
+    <td scope="row"><p>
+      <label>
+        <input type="radio" name="RadioGroup22" value="5" id="RadioGroup22_0" />
+        Disagree</label>
+      <br />
+    </p></td>
+    <td><label>
+      <input type="radio" name="RadioGroup22" value="4" id="RadioGroup22_1" />
+      Slightly disagree </label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup22" value="3" id="RadioGroup22_2" />
+      Neutral</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup22" value="2" id="RadioGroup22_3" />
+      Slightly agree</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup22" value="1" id="RadioGroup22_4" />
+      Agree</label></td>
+  </tr>
+  <tr>
+    <th colspan="5" scope="row">19.I  have a vivid imagination.</th>
+    </tr>
+  <tr>
+    <td scope="row"><p>
+      <label>
+        <input type="radio" name="RadioGroup23" value="1" id="RadioGroup23_0" /></label>
+      Disagree<br />
+    </p></td>
+    <td><label>
+      <input type="radio" name="RadioGroup23" value="2" id="RadioGroup23_1" />
+      Slightly disagree </label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup23" value="3" id="RadioGroup23_2" />
+      Neutral</label></td>
+    <td><br />
+      <label>
+        <input type="radio" name="RadioGroup23" value="4" id="RadioGroup23_3" />
+        Slightly agree</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup23" value="5" id="RadioGroup23_4" />
+      Agree</label></td>
+  </tr>
+  <tr>
+    <th colspan="5" scope="row">20.I  am not interested in abstract ideas</th>
+    </tr>
+  <tr>
+    <td scope="row"><p>
+      <label>
+        <input type="radio" name="RadioGroup24" value="5" id="RadioGroup24_0" />
+        Disagree</label>
+      <br />
+      <br />
+    </p></td>
+    <td><label>
+      <input type="radio" name="RadioGroup24" value="4" id="RadioGroup24_1" />
+      Slightly disagree </label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup24" value="3" id="RadioGroup24_2" />
+      Neutral</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup24" value="2" id="RadioGroup24_3" />
+      Slightly agree</label></td>
+    <td><label>
+      <input type="radio" name="RadioGroup24" value="1" id="RadioGroup24_4" />
+      Agree</label></td>
+  </tr>
+{#  <tr>#}
+{#    <th colspan="5" scope="row">25.I have excellent ideas.</th>#}
+{#    </tr>#}
+{#  <tr>#}
+{#    <td scope="row"><label>#}
+{#      <input type="radio" name="RadioGroup25" value="1" id="RadioGroup25_0" />#}
+{#      Disagree</label>    </td>#}
+{#    <td><label><input type="radio" name="RadioGroup25" value="2" id="RadioGroup25_1" />#}
+{#Slightly disagree </label></td>#}
+{#    <td><label><input type="radio" name="RadioGroup25" value="3" id="RadioGroup25_2" />#}
+{#Neutral</label> </td>#}
+{#    <td><label><input type="radio" name="RadioGroup25" value="4" id="RadioGroup25_3" />#}
+{#Slightly agree </label></td>#}
+{#    <td><label><input type="radio" name="RadioGroup25" value="5" id="RadioGroup25_4" />#}
+{#Agree</label></td>#}
+{#  </tr>#}
+  <tr>
+    <th colspan="5" scope="row"><p>
+      <input type="submit" name="button" id="button" value="Submit" />
+      <br />
+    </p></th>
+    </tr>
+</table>
+</form>
+</body>
+</html>
+{% endblock %}
